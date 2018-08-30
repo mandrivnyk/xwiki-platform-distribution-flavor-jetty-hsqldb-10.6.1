@@ -1,0 +1,47 @@
+// ------------------------------------------------------------------
+// NOTICE file containing copyrights,
+// in this case for XWiki Platform - Distribution - Flavor - Data - HSQLDB
+// ------------------------------------------------------------------
+
+XWiki Platform - Distribution - Flavor - Data - HSQLDB
+Copyright 2004-2018 XWiki
+
+This product includes/uses software developed by 'an unknown organization'
+  - bootstrap-select (http://webjars.org)
+  - hibernate-validator (http://validator.hibernate.org/hibernate-validator)
+  - org.restlet (http://restlet.org/org.restlet)
+  - org.restlet.ext.jackson (http://restlet.org/org.restlet.ext.jackson)
+  - snakeyaml (http://www.snakeyaml.org)
+  - org.restlet.ext.jaxb (http://restlet.org/org.restlet.ext.jaxb)
+  - validation-api (http://beanvalidation.org)
+  - boilerpipe (http://code.google.com/p/boilerpipe/)
+  - requirejs (http://webjars.org/requirejs)
+  - jquery (http://webjars.org)
+  - bootstrap (http://webjars.org)
+  - Keypress (http://webjars.org)
+  - bootstrap-switch (http://webjars.org)
+
+This product includes/uses software developed by 'FasterXML' (http://fasterxml.com)
+  - woodstox-core (https://github.com/FasterXML/woodstox)
+
+This product includes/uses software developed by 'FasterXML' (http://fasterxml.com/)
+  - jackson-core (https://github.com/FasterXML/jackson-core)
+  - jackson-databind (http://github.com/FasterXML/jackson)
+  - jackson-annotations (http://github.com/FasterXML/jackson)
+  - jackson-dataformat-csv (https://github.com/FasterXML/jackson-dataformats-text)
+  - jackson-dataformat-smile (http://github.com/FasterXML/jackson-dataformats-binary)
+  - jackson-dataformat-xml (http://wiki.fasterxml.com/JacksonExtensionXmlDataBinding)
+  - jackson-dataformat-yaml (https://github.com/FasterXML/jackson-dataformats-text)
+  - jackson-module-jaxb-annotations (https://github.com/FasterXML/jackson-modules-base)
+  - jackson-module-jsonSchema (https://github.com/FasterXML/jackson-module-jsonSchema)
+
+This product includes/uses software developed by 'fasterxml.com' (http://fasterxml.com)
+  - stax2-api (http://github.com/FasterXML/stax2-api)
+
+This product includes/uses software developed by 'JBoss by Red Hat' (http://www.jboss.org)
+  - jboss-logging (http://www.jboss.org)
+
+This product includes/uses software developed by 'The HSQL Development Group' (http://hsqldb.org)
+  - hsqldb (http://hsqldb.org)
+
+

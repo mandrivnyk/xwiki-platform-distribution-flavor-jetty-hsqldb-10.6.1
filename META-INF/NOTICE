@@ -1,0 +1,17 @@
+// ------------------------------------------------------------------
+// NOTICE file containing copyrights,
+// in this case for XWiki Platform - Distribution - Jetty HSQLDB
+// ------------------------------------------------------------------
+
+XWiki Platform - Distribution - Jetty HSQLDB
+Copyright 2004-2018 XWiki
+
+This product includes/uses software developed by 'The HSQL Development Group' (http://hsqldb.org)
+  - hsqldb (http://hsqldb.org)
+
+This product includes/uses software developed by 'XWiki' (http://xwiki.org/)
+  - xwiki-platform-distribution-war (http://extensions.xwiki.org?id=org.xwiki.platform:xwiki-platform-distribution-war:10.6.1:::/xwiki-commons-pom/xwiki-platform/xwiki-platform-distribution/xwiki-platform-distribution-war)
+  - xwiki-platform-tool-rootwebapp (http://extensions.xwiki.org?id=org.xwiki.platform:xwiki-platform-tool-rootwebapp:10.6.1:::/xwiki-commons-pom/xwiki-platform/xwiki-platform-tools/xwiki-platform-tool-rootwebapp)
+  - xwiki-platform-tool-jetty-resources (http://extensions.xwiki.org?id=org.xwiki.platform:xwiki-platform-tool-jetty-resources:10.6.1:::/xwiki-commons-pom/xwiki-platform/xwiki-platform-tools/xwiki-platform-tool-jetty/xwiki-platform-tool-jetty-resources)
+
+

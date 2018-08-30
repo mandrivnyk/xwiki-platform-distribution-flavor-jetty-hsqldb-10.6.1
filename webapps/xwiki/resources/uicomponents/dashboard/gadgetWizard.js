@@ -1,0 +1,15 @@
+require.config({paths:{"xwiki-ckeditor":new XWiki.Document("EditSheet","CKEditor").getURL("jsx","r=1")}});define(["jquery","xwiki-ckeditor"],function(c,a){
+/*!
+  #set ($l10nKeys = [
+    'dashboard.gadgetSelector.title',
+    'dashboard.gadgetEditor.title',
+    'dashboard.gadgetEditor.changeGadget.label',
+    'dashboard.gadgetEditor.gadgetTitle.label',
+    'dashboard.gadgetEditor.gadgetTitle.hint'
+  ])
+  #set ($l10n = {})
+  #foreach ($key in $l10nKeys)
+    #set ($discard = $l10n.put($key, $services.localization.render($key)))
+  #end
+  */
+var l=$jsontool.serialize($l10n);var d=c('<li class="macro-parameter" data-id="$gadgetTitle"><div class="macro-parameter-name"></div><div class="macro-parameter-description"></div><input type="text" class="macro-parameter-field" name="$gadgetTitle"/></li>');d.find(".macro-parameter-name").text(l["dashboard.gadgetEditor.gadgetTitle.label"]);d.find(".macro-parameter-description").text(l["dashboard.gadgetEditor.gadgetTitle.hint"]);c("head").append(c('<link type="text/css" rel="stylesheet"/>').attr("href","$services.webjars.url('org.xwiki.contrib:application-ckeditor-webjar', 'plugins/xwiki-macro/macroWizard.min.css', {'evaluate': true})"));var i=function(n,m){if(n&&typeof n.content==="string"){return m.plugins.registered["xwiki-macro"].parseMacroCall(n.content)}};var h=function(n){var m=c.Deferred();require(["macroWizard"],function(o){m.resolve(n,o)});return m.promise()};var k=function(n){var m=n.attr("data-macroid").split("/")[0];return"${escapetool.d}services.localization.render('rendering.macro."+m+".name')"};var f;c(document).on("show.bs.modal",".macro-selector-modal",function(n){if(f&&!c(this).hasClass("gadget-selector-modal")){c(this).addClass("gadget-selector-modal");var m=c(this).find(".modal-title");m.prop("oldText",m.text()).text(l["dashboard.gadgetSelector.title"])}});var g=function(){var m=c(".gadget-selector-modal").removeClass("gadget-selector-modal");var n=m.find(".modal-title");n.text(n.prop("oldText"))};var j;c(document).on("ready",".macro-editor",function(){if(!f){return}var p=c(this).closest(".modal");if(!p.hasClass("gadget-editor-modal")){j=f.title;p.addClass("gadget-editor-modal");var m=p.find(".modal-title");m.prop("oldText",m.text()).text(l["dashboard.gadgetEditor.title"]);var q=p.find(".modal-footer .btn-default").not('*[data-dismiss="modal"]');q.prop("oldText",q.text()).text(l["dashboard.gadgetEditor.changeGadget.label"])}var n=d.clone();c(this).find(".macro-parameters").prepend(n);var o=j||k(c(this));j=null;n.find("input").val(o).focus()});var e=function(){var m=c(".gadget-editor-modal").removeClass("gadget-editor-modal");var n=m.find(".modal-title");n.text(n.prop("oldText"));var o=m.find(".modal-footer .btn-default").not('*[data-dismiss="modal"]');o.text(o.prop("oldText"))};var b=function(o,n,m){f=o||{};return m(i(o,n)).then(function(p){return{title:c('.macro-editor input[name="$gadgetTitle"]').val(),content:n.plugins.registered["xwiki-macro"].serializeMacroCall(p)}}).always(function(){f=null;g();e()})};return function(m){return a.then(h).then(c.proxy(b,null,m))}});
